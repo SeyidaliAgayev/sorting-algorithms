@@ -1,12 +1,12 @@
 import algorithms.BubbleSortAlgorithm;
 import algorithms.MergeSortAlgorithm;
+import algorithms.QuickSortAlgorithm;
 import util.FileUtils;
 
 public class Main {
     public static void main(String[] args) {
         FileUtils fileUtils = new FileUtils();
-        MergeSortAlgorithm mergeSortAlgorithm = new MergeSortAlgorithm();
-        MergeSortAlgorithm.mergeSort(fileUtils.readIntegersFromArray());
+        QuickSortAlgorithm.quickSort(fileUtils.readIntegersFromArray(), 0, fileUtils.readIntegersFromArray().length - 1);
 
     }
 }
